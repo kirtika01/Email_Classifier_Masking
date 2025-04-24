@@ -55,7 +55,3 @@ async def classify_email(request: EmailRequest) -> Dict[str, Any]:
             status_code=500, detail=f"Error processing request: {str(e)}"
         )
 
-
-@app.get("/health")
-async def health_check():
-    return {"status": "healthy"}
